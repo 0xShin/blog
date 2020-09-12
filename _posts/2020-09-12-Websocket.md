@@ -11,7 +11,7 @@ tags: [about]
 
 ## What is websocket?
 
-![f4390d12c641c468dcfb743dc64ae7cb.png](../../_resources/fde9d0e2ee684942b04f6a719fc94e3b.png)  
+![f4390d12c641c468dcfb743dc64ae7cb.png](/assets/images/fde9d0e2ee684942b04f6a719fc94e3b.png)  
 Websocket is a TCP commmunation protocol that provides communication between a server and a client to transfer data   real-time. It also supports Cross Origin Communication which means it allows communication between different servers.
 
 ### Example usages of a websocket
