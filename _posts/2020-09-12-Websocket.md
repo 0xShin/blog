@@ -1,4 +1,11 @@
-Websocket
+---
+layout: single
+classes: wide
+title: Websocket
+excerpt: "What I have learned from websocket."
+date: 2020-09-12
+tags: [about]
+---
 
 # Websocket
 
