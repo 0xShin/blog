@@ -11,7 +11,7 @@ tags: [windows persistence]
 ## What is BITS job?
 BITS or also known as Background Intelligent Transfer Service is a application that is used to download or upload files to two protocols which are HTTP web servers and SMB. BITS is also used to update other applications. 
 
-One of the key feautures of BITS is that it allows download in the background and once a connection has been established it won't get disconnect unless the user logout or rebooted and when the network connection is off. It's also interesting to mention that BITS will reestablished the connection that has been lost due to circumstances for instance network connection was turned off, or the user rebooted or logout.
+One of the key features of BITS is that it allows download in the background and once a connection has been established it won't get disconnect unless the user logout or rebooted and when the network connection is off. It's also interesting to mention that BITS will reestablished the connection that has been lost due to circumstances for instance network connection was turned off, or the user rebooted or logout.
 
 ## Using BITS as a persistence tactic.
 In the hacker's view or the offensive side, this can be abused to download payloads or tools that they require, It is also worth to mention that there's a highly chance of not getting detected when using this as there are also legitimate applications that use this so we just need to blend in with the environment. However, using BITS requires administration privileges on the compromised host.
@@ -44,10 +44,10 @@ bitsadmin /resume shell
 The metasploit module `exploit/multi/script/web_delivery` uses regsvr32 to deliver payloads.
 
 ## Resources:
-https://lolbas-project.github.io/lolbas/Binaries/Bitsadmin/
+[https://lolbas-project.github.io/lolbas/Binaries/Bitsadmin/](https://lolbas-project.github.io/lolbas/Binaries/Bitsadmin/)
 
-https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1197/T1197.md
+[https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1197/T1197.md](https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1197/T1197.md)
 
-https://pentestlab.blog/2019/10/30/persistence-bits-jobs/
+[https://pentestlab.blog/2019/10/30/persistence-bits-jobs/](https://pentestlab.blog/2019/10/30/persistence-bits-jobs/)
 
-http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html
+[http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html](http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html)
