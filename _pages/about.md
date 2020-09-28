@@ -3,7 +3,7 @@ title: "About"
 permalink: /about/
 date: 2019-12-08
 ---
-```
+
         _______________________________
        < Our weapons are our keyboards >
         --------------------------------
@@ -18,7 +18,6 @@ date: 2019-12-08
        < To wish a change, is to be the change itself >
           -----------------------------------------
 
-```
 
 ## My name is Shin, I am currently walking to the path of infosec.
 Things that I can say about myself:
